@@ -1,0 +1,165 @@
+
+.bannerMain {
+  padding: 4rem 0rem;
+}
+
+.row, .rowContent {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.rowContent {
+  justify-content: center;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.colText {
+  margin-top: 6rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 2.8rem;
+}
+
+.colText .text {
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  color: #ffffffe3;
+}
+
+.buttonPrimary {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #FFB53D;
+}
+
+.buttonPrimary:hover {
+  background-color: #eb9710;
+  color: #fff;
+}
+
+.listBooks {
+  padding: 5rem 0rem;
+}
+
+.rowListBooks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subtitle {
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.borderBottom {
+  background: #FFB53D;
+  height: 4px;
+  border-radius: 3px;
+  width: 10%;
+  margin-bottom: 3rem;
+}
+
+.newBooks {
+  padding: 4rem 0rem;
+}
+
+.cardNewBook {
+  background-color: #1f1f22;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.bookInfo {
+  padding: 0.5rem;
+}
+
+.bookInfo h3 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.bookInfo p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.bookInfo span {
+  font-size: 18px;
+}
+
+.buttonPrimary {
+  padding: 0.9rem 1.6rem;
+}
+
+.rankStars {
+  margin: 1rem 0rem;
+}
+
+.infoSite {
+  padding: 4rem;
+}
+
+/****
+  Responsividade
+***/
+
+@media (min-width: 768px) {
+  .colMd {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .colMd_2 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 990px) {
+  .rowNewBooks {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  .rowNewBooks .colMd_2 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerMain img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 992px){
+  .bannerMain img {
+    width: 360px;
+  }
+}

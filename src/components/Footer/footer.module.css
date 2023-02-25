@@ -1,0 +1,14 @@
+
+.footer {
+  padding: 3rem 0rem;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.textCenter {
+  text-align: center;
+}

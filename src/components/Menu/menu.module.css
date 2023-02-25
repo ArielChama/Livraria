@@ -1,0 +1,52 @@
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuList {
+  display: flex;
+  padding: 1rem 0rem;
+}
+
+.menuItem {
+  margin-right: 2rem;
+}
+
+.menuLogo {
+  margin-top: 1rem;
+}
+
+.buttonRegister, .buttonLogin {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #FFB53D;
+}
+
+.buttonLogin {
+  background-color: inherit;
+  color: #FFB53D;
+  border: 1px solid #FFB53D;
+}
+
+.buttonRegister:hover {
+  background-color: #eb9710;
+  color: #fff;
+}
+
+.buttonLogin:hover {
+  background-color: #FFB53D;
+  color: #fff;
+  border: 1px solid transparent;
+}

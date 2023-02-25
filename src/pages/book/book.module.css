@@ -1,0 +1,52 @@
+
+.bookInfo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 0rem;
+}
+
+.colImage {
+  width: 20%;
+  margin-right: 2rem;
+}
+
+.colInfo {
+  width: 50%;
+}
+
+.colInfo .rankStars {
+  margin-bottom: 10px;
+}
+
+.colInfo h1 {
+  margin-bottom: 10px;
+}
+
+.colInfo h3 {
+  margin-bottom: 20px;
+}
+
+.colInfo p {
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.buttonAdd {
+  display: inline-block;
+  padding: 0.6rem 1.8rem;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #FFB53D;
+}
+
+.buttonAdd:hover {
+  background-color: #eb9710;
+  color: #fff;
+}

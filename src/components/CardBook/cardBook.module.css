@@ -1,0 +1,30 @@
+.book {
+  background-color: #1f1f22;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  width: 220px;
+}
+
+.bookImage {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.bookInfo {
+  padding: 0.5rem;
+}
+
+.bookInfo h4 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.bookInfo p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.bookInfo span {
+  font-size: 18px;
+}

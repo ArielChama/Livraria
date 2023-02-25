@@ -1,0 +1,62 @@
+.filtersBooks {
+  margin: 6rem 0rem;
+}
+
+.inputSearch {
+  display: block;
+  width: 50%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b8b8b8;
+  background-color: #333335;
+  background-clip: padding-box;
+  border: transparent;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.inputSearch:focus {
+  background-color: #333335;
+  border-color: #FFB53D;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #FFB53D;
+}
+
+.categories {
+  margin: 1rem 0rem;
+}
+
+.buttonCategory {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 50px;
+  margin: 5px;
+  color: #fff;
+  background-color: #333335;
+}
+
+.buttonCategory:hover {
+  color: #fff;
+  background-color: #272727;
+}
+
+.listBooks, .listAuthors {
+  padding: 1rem 0rem;
+}
+
+.rowListBooks, .rowListAuthors {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+

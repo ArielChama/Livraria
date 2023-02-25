@@ -1,0 +1,64 @@
+
+
+.cardContainer {
+  background-color: #1f1f22;
+  margin: 10% 0;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.inputQuantity {
+  width: 80px;
+  padding: 0.375rem 0.4rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #b8b8b8;
+  background-color: #333335;
+  border: 1px solid transparent;
+}
+
+.inputQuantity:focus {
+  background-color: #333335;
+  border-color: #FFB53D;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #FFB53D;
+}
+
+.buttonFinished {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #FFB53D;
+  border: 1px solid #FFB53D;
+}
+
+.buttonFinished:hover {
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #FFB53D;
+}
+
+.table {
+  width: 100%;
+  margin: 2rem 0rem;
+  vertical-align: top;
+}
+
+.table > tbody {
+  vertical-align: inherit;
+}
+.table > thead {
+  vertical-align: bottom;
+}
+
+.tableCollum {
+  padding: 10rem;
+}
