@@ -21,38 +21,6 @@
   gap: 1.5rem;
 }
 
-.buttonRegister,
-.buttonLogin {
-  display: inline-block;
-  padding: 1rem 1.8rem;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  border: transparent;
-  border-radius: 50px;
-  background-color: #FFB53D;
-}
-
-.buttonLogin {
-  background-color: inherit;
-  color: #FFB53D;
-  border: 1px solid #FFB53D;
-}
-
-.buttonRegister:hover {
-  background-color: #eb9710;
-  color: #fff;
-}
-
-.buttonLogin:hover {
-  background-color: #FFB53D;
-  color: #fff;
-  border: 1px solid transparent;
-}
-
 .buttonMenu {
   background-color: inherit;
   border-color: transparent;
@@ -73,7 +41,7 @@
   .menuList {
     width: 50%;
     height: 100vh;
-    margin-top: 61rem;
+    margin-top: 59rem;
     flex-direction: column;
     background-color: #1f1f22;
     transition: 0.5s ease-in;

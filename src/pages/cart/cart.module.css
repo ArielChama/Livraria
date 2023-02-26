@@ -25,27 +25,6 @@
   box-shadow: 0 0 0 0.25rem #FFB53D;
 }
 
-.buttonFinished {
-  display: inline-block;
-  padding: 1rem 1.8rem;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: inherit;
-  color: #FFB53D;
-  border: 1px solid #FFB53D;
-}
-
-.buttonFinished:hover {
-  border: 1px solid transparent;
-  color: #fff;
-  background-color: #FFB53D;
-}
-
 .table {
   width: 100%;
   margin: 2rem 0rem;

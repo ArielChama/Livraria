@@ -35,28 +35,6 @@
   color: #ffffffe3;
 }
 
-.buttonPrimary {
-  display: inline-block;
-  padding: 1rem 1.8rem;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  border: transparent;
-  border-radius: 50px;
-  background-color: #FFB53D;
-}
-
-.buttonPrimary:hover {
-  background-color: #eb9710;
-  color: #fff;
-}
-
 .listBooks {
   padding: 5rem 0rem;
 }

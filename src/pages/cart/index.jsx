@@ -81,7 +81,7 @@ const Cart = () => {
               </tbody>
             </table>
 
-            <button type="submit" className={style.buttonFinished}>
+            <button type="submit" className="buttonSecondary">
               Finalizar compra
             </button>
           </div>

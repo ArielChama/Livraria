@@ -45,6 +45,41 @@ li {
   margin-left: auto;
 }
 
+.buttonPrimary, .buttonSecondary {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: transparent;
+  border-radius: 50px;
+  background-color: #FFB53D;
+  transition: 0.3s ease-in-out;
+}
+
+.buttonPrimary:hover {
+  background-color: #eb9710;
+  color: #fff;
+}
+
+.buttonSecondary {
+  background-color: inherit;
+  color: #FFB53D;
+  border: 1px solid #FFB53D;
+}
+
+.buttonSecondary:hover {
+  background-color: #FFB53D;
+  color: #fff;
+  border: 1px solid #FFB53D;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

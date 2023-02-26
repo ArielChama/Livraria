@@ -38,11 +38,11 @@ const Menu = () => {
             </li>
 
             <li className={style.menuItem}>
-              <button type="button" onClick={() => setOpenModal(true)} className={style.buttonLogin}>Entrar</button>
+              <button type="button" onClick={() => setOpenModal(true)} className="buttonSecondary">Entrar</button>
             </li>
 
             <li className={style.menuItem}>
-              <button type="button" className={style.buttonRegister}>Cadastrar</button>
+              <button type="button" className="buttonPrimary">Cadastrar</button>
             </li>
           </ul>
 
