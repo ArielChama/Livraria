@@ -4,9 +4,11 @@ import Menu from '../Menu'
 
 const Layout = ({ children }) => {
   return (
-    <main className="container">
+    <main>
       <Menu />
-      {children}
+      <section className="container">
+        {children}
+      </section>
       <Footer />
     </main>
   )

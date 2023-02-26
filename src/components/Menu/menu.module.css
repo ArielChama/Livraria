@@ -1,23 +1,28 @@
 
+.header {
+  position: fixed;
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .menu {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  height: 8vh;
 }
 
 .menuList {
   display: flex;
-  padding: 1rem 0rem;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
 }
 
-.menuItem {
-  margin-right: 2rem;
-}
-
-.menuLogo {
-  margin-top: 1rem;
-}
-
-.buttonRegister, .buttonLogin {
+.buttonRegister,
+.buttonLogin {
   display: inline-block;
   padding: 1rem 1.8rem;
   font-size: 14px;
@@ -26,9 +31,6 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
   border: transparent;
   border-radius: 50px;
   background-color: #FFB53D;
@@ -49,4 +51,47 @@
   background-color: #FFB53D;
   color: #fff;
   border: 1px solid transparent;
+}
+
+.buttonMenu {
+  background-color: inherit;
+  border-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .background {
+    background-color: #1f1f22;
+    transition: 0.5s ease-in;
+  }
+
+  .buttonMenu {
+    display: block;
+  }
+
+  .menuList {
+    width: 50%;
+    height: 100vh;
+    margin-top: 61rem;
+    flex-direction: column;
+    background-color: #1f1f22;
+    transition: 0.5s ease-in;
+    transform: translateX(200%);
+  }
+
+  .menuItem {
+    cursor: pointer;
+  }
+
+  .active {
+    transform: translateX(100%);
+  }
+
+}
+
+@media screen and (max-width: 568px) {
+  .active {
+    transform: translateX(60%);
+  }
 }
