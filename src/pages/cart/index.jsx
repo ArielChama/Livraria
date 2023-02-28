@@ -3,7 +3,6 @@ import HEAD from '@/components/HEAD'
 import Layout from '@/components/Layout'
 import style from './cart.module.css'
 import Image from 'next/image'
-import { FaTrash } from 'react-icons/fa'
 
 const Books = [
   {
@@ -35,7 +34,7 @@ const Cart = () => {
         <div className={style.cardContainer}>
           <h2>O seu carrinho <span>(2 itens)</span></h2>
 
-          <div>
+          <div className={style.containerTable}>
             <table class={style.table}>
               <thead>
                 <tr>
@@ -68,13 +67,9 @@ const Cart = () => {
                     </td>
 
                     <td>
-                      <p>{price} Kz</p>
-                    </td>
-
-                    <td>
-                      <a href="">
-                        <FaTrash style={{ fontSize: "30px", color: "#FFB53D" }} />
-                      </a>
+                      <button className={style.buttonDelete}>
+                        Apagar
+                      </button>
                     </td>
                   </tr>
                 ))}
