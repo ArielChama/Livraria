@@ -1,10 +1,9 @@
-
 .header {
   position: fixed;
   position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .menu {
@@ -14,10 +13,13 @@
   height: 8vh;
 }
 
+.menuItem {
+  cursor: pointer;
+}
+
 .menuList {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   gap: 1.5rem;
 }
 
@@ -41,21 +43,21 @@
   .menuList {
     width: 50%;
     height: 100vh;
-    margin-top: 59rem;
+    margin-top: 53rem;
+    padding-top: 10px;
     flex-direction: column;
     background-color: #1f1f22;
     transition: 0.5s ease-in;
     transform: translateX(200%);
   }
 
-  .menuItem {
-    cursor: pointer;
-  }
-
   .active {
     transform: translateX(100%);
   }
 
+  .menuItem {
+    padding: 10px 0px;
+  }
 }
 
 @media screen and (max-width: 568px) {

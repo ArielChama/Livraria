@@ -8,6 +8,7 @@ const Menu = () => {
   const [openModal, setOpenModal] = React.useState(false)
   const [activeMenu, setActiveMenu] = React.useState(style.menuList)
   const [backgroundMenu, setBackgroundMenu] = React.useState()
+  const user = true // Váriavel de teste
 
   const menuActive = () => {
     activeMenu === style.menuList ? setActiveMenu(`${style.menuList} ${style.active}`) : setActiveMenu(style.menuList)
@@ -30,7 +31,7 @@ const Menu = () => {
             </li>
 
             <li className={style.menuItem}>
-              <a href="">Livros</a>
+              <a href="/discover">Livros</a>
             </li>
 
             <li className={style.menuItem}>
@@ -39,10 +40,6 @@ const Menu = () => {
 
             <li className={style.menuItem}>
               <button type="button" onClick={() => setOpenModal(true)} className="buttonSecondary">Entrar</button>
-            </li>
-
-            <li className={style.menuItem}>
-              <button type="button" className="buttonPrimary">Cadastrar</button>
             </li>
           </ul>
 
