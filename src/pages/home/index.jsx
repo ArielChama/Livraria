@@ -63,7 +63,7 @@ const Home = () => {
                 aliquid ea dignissimos delectus.
               </p>
 
-              <a href="" className="buttonPrimary">
+              <a href="/discover" className="buttonPrimary">
                 Explorar
               </a>
             </div>
@@ -143,8 +143,8 @@ const Home = () => {
                         <FaStarHalfAlt style={{ fontSize: "20px", color: "yellow" }} />
                       </div>
 
-                      <a href="" className="buttonPrimary">
-                        Comprar
+                      <a href="/book/1" className="buttonPrimary">
+                        Ver
                       </a>
                     </div>
                   </div>
@@ -179,8 +179,8 @@ const Home = () => {
                         <FaStarHalfAlt style={{ width: "20px", color: "yellow" }} />
                       </div>
 
-                      <a href="" className="buttonPrimary">
-                        Comprar
+                      <a href="/book/2" className="buttonPrimary">
+                        Ver
                       </a>
                     </div>
                   </div>
