@@ -59,7 +59,7 @@
   background-clip: padding-box;
   border: transparent;
   border-radius: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 8px;
 }
 
@@ -83,7 +83,7 @@
   cursor: pointer;
 }
 
-.buttonSubmit, .buttonOptional {
+.buttonOptional {
   display: inline-block;
   width: 100%;
   padding: 1rem 1.8rem;
@@ -119,9 +119,71 @@
   margin-right: 10px;
   color: #fff;
   background-color: #333335;
+  transition: 0.8s ease;
 }
 
 .buttonOptional:hover {
   background-color: #eeb04c;
   color: #fff;
+}
+
+/* 
+  Navegation tabs
+*/
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabsHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tabsToggle {
+  margin: 0 5px;
+  padding: 7px 25px;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  transition: .5s;
+}
+
+.tabsActive {
+  background: #FFB53D;
+  height: 4px;
+  border-radius: 3px;
+  margin-top: 4px;
+}
+
+.tabsContent {
+  display: none;
+}
+
+.tabsContent.contentActive {
+  display: block;
+}
+
+
+@media (max-width: 895px) {
+  .modalLogin {
+    width: 70%;
+  }
+}
+
+@media (max-width: 639px) {
+  .modalLogin {
+    width: 80%;
+  }
+}
+
+@media (max-width: 560px) {
+  .buttonOptional {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
