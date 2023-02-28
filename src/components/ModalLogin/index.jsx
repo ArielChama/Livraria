@@ -1,8 +1,28 @@
 import React from 'react'
 import style from './modal.module.css'
-import Image from 'next/image'
+import Login from './Login'
+import Register from './Register'
 
 export const ModalLogin = ({ isOpen, setModalOpen }) => {
+  const [activeTabLogin, setActiveTabLogin] = React.useState(`${style.tabsContent} ${style.contentActive}`)
+  const [activeTabRegister, setActiveTabRegister] = React.useState(style.tabsContent)
+  const [activeToggleLogin, setActiveToggleLogin] = React.useState(style.tabsActive)
+  const [activeToggleRegister, setActiveToggleRegister] = React.useState("")
+
+  const TabLogin = () => {
+    setActiveTabLogin(`${style.tabsContent} ${style.contentActive}`)
+    setActiveTabRegister(style.tabsContent)
+    setActiveToggleLogin(style.tabsActive)
+    setActiveToggleRegister("")
+  }
+
+  const TabRegister = () => {
+    setActiveTabLogin(style.tabsContent)
+    setActiveTabRegister(`${style.tabsContent} ${style.contentActive}`)
+    setActiveToggleLogin("")
+    setActiveToggleRegister(style.tabsActive)
+  }
+  
 
   if (isOpen) {
     return (
@@ -11,33 +31,26 @@ export const ModalLogin = ({ isOpen, setModalOpen }) => {
           <button type="button" className={style.buttonClose} onClick={setModalOpen}>X</button>
           <div className={style.body}>
             <div className={style.container}>
-              <div className={style.text}>
-                <Image src="/favicon.png" width="80" height="80" alt="Logo oficial" />
-                <h2>Seja bem-vindo ao E-NGANZI</h2>
-                <p>
-                  Acesse agora a sua conta e explore nossa biblioteca de livros
-                </p>
-              </div>
-
-              <form>
-                <label htmlFor="">Email</label>
-                <input type="text" className={style.formInput} />
-
-                <label htmlFor="">Palavra-passe</label>
-                <input type="text" className={style.formInput} />
-
-                <button type="submit" className={style.buttonSubmit}>
-                  Entrar
-                </button>
-
-                <div className={style.groupButtonsOptional}>
-                  <p>Ou inicie sessão com: </p>
-                  <button type="button" className={style.buttonOptional}>Google</button>
-                  <button type="button" className={style.buttonOptional}>Facebook</button>
+              <div class={style.tabs}>
+                <div class={style.tabsHead}>
+                  <div onClick={TabLogin} class={`${style.tabsToggle}`}>
+                    <span>Entrar</span>
+                    <div className={activeToggleLogin}></div>
+                  </div>
+                  <div onClick={TabRegister} class={`${style.tabsToggle}`}>
+                    <span>Criar</span>
+                    <div className={activeToggleRegister}></div>
+                  </div>
                 </div>
-
-                <p>Não tem uma conta ainda? <a href="">Criar conta</a></p>
-              </form>
+                <div>
+                  <div class={activeTabLogin}>
+                    <Login />
+                  </div>
+                  <div class={activeTabRegister}>
+                    <Register />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
