@@ -60,7 +60,7 @@ li {
   border: transparent;
   border-radius: 50px;
   background-color: #FFB53D;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .buttonPrimary:hover {
@@ -78,6 +78,10 @@ li {
   background-color: #FFB53D;
   color: #fff;
   border: 1px solid #FFB53D;
+}
+
+.w_100 {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
