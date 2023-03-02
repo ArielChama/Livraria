@@ -30,6 +30,10 @@
   display: none;
 }
 
+.menuItem img {
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 767px) {
   .background {
     background-color: #1f1f22;
@@ -43,7 +47,7 @@
   .menuList {
     width: 50%;
     height: 100vh;
-    margin-top: 53rem;
+    margin-top: 58rem;
     padding-top: 10px;
     flex-direction: column;
     background-color: #1f1f22;
