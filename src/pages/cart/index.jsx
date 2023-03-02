@@ -42,7 +42,6 @@ const Cart = () => {
                   <th scope="col">Item</th>
                   <th scope="col">Preço</th>
                   <th scope="col">Quantidade</th>
-                  <th scope="col">Total</th>
                 </tr>
               </thead>
               

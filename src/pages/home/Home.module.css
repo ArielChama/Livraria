@@ -30,7 +30,7 @@
 
 .colText .text {
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 1rem;
   color: #ffffffe3;
 }
@@ -101,17 +101,18 @@
   padding: 4rem;
 }
 
+.list li {
+  list-style:square;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 /****
   Responsividade
 ***/
 
 @media (min-width: 768px) {
-  .colMd {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-
-  .colMd_2 {
+  .colMd, .colMd_2 {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -131,13 +132,27 @@
 }
 
 @media (max-width: 768px) {
-  .bannerMain img {
+  .imageSide {
     width: 340px;
+  }
+
+  .imageSideBook {
+    width: 300px;
   }
 }
 
 @media (max-width: 992px){
-  .bannerMain img {
+  .imageSide {
     width: 360px;
+  }
+
+  .imageSideBook {
+    width: 280px;
+  }
+}
+
+@media (min-width: 993px) {
+  .imageSideBook {
+    width: 350px;
   }
 }

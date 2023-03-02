@@ -31,14 +31,17 @@
 
 .text {
   text-align: center;
+}
+
+.text.login {
   margin-bottom: 32px
 }
 
-.text img {
+.login img {
   margin-bottom: 28px;
 }
 
-.text h2 {
+.login h2 {
   margin-bottom: 20px;
 }
 
@@ -70,6 +73,19 @@
   box-shadow: 0 0 0 0.25rem #FFB53D;
 }
 
+.formRadio {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.formRadio input[type='radio'] {
+  margin-left: 10px;
+}
+
+.text.register {
+  margin-bottom: 10px;
+} 
+
 .buttonClose {
   box-sizing: content-box;
   width: 1em;
@@ -86,16 +102,13 @@
 .buttonOptional {
   display: inline-block;
   width: 100%;
-  padding: 1rem 1.8rem;
+  padding: 0.7rem 1.8rem;
   font-size: 14px;
   font-weight: bold;
   line-height: 1px;
   color: #fff;
   text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
   cursor: pointer;
-  user-select: none;
   border: transparent;
   border-radius: 50px;
   background-color: #FFB53D;
@@ -107,7 +120,7 @@
 }
 
 .groupButtonsOptional {
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 .groupButtonsOptional p {

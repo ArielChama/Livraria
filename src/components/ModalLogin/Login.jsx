@@ -6,7 +6,7 @@ import { FaFacebook, FaGoogle } from 'react-icons/fa'
 const Login = () => {
   return (
     <>
-      <div className={style.text}>
+      <div className={`${style.text} ${style.login}`}>
         <Image src="/favicon.png" width="80" height="80" alt="Logo oficial" />
         <h2>Seja bem-vindo ao E-NGANZI</h2>
         <p>

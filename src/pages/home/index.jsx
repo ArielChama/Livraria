@@ -69,7 +69,7 @@ const Home = () => {
             </div>
 
             <div className={style.colMd_2}>
-              <Image src="/Images/Man reading-pana-simple.svg" width="450" height="450" alt="" />
+              <Image src="/Images/Man reading-pana-simple.svg" width="450" height="450" alt="" className={style.imageSide} />
             </div>
           </div>
         </div>
@@ -88,25 +88,23 @@ const Home = () => {
         <div className={style.infoSite}>
           <div className={style.row}>
             <div className={style.colMd_2}>
-              <Image src="/Images/Taking notes-amico-simple.svg" width="400" height="400" alt="" />
+              <Image src="/Images/Taking notes-amico-simple.svg" width="450" height="450" alt="" className={style.imageSideBook} />
             </div>
 
             <div className={`${style.colMd_2} ${style.colText}`}>
-              <h1 className={style.title}>O que você pode fazer?</h1>
+              <h1>O que você pode fazer?</h1>
               <p className={style.text}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, autem! 
                 Ab rerum laborum modi autem cumque culpa id a doloribus nobis in. 
-                Facilis fuga optio id accusamus excepturi possimus pariatur.
               </p>
+
               <div>
-                <ul>
-                  <li></li>
+                <ul className={style.list}>
+                  <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                  <li>Modi ex debitis, odit quibusdam facilis aut tempore obcaecati.</li>
+                  <li>Nam hic mollitia soluta et laudantium libero sit, iusto omnis dignissimos placeat asperiores.</li>
                 </ul>
               </div>
-
-              <a href="" className="buttonPrimary">
-                Explorar
-              </a>
             </div>
           </div>
         </div>
