@@ -4,6 +4,7 @@ import style from './menu.module.css'
 import { ModalLogin } from '../ModalLogin'
 import { FaBars } from 'react-icons/fa'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import Script from 'next/script'
 
 const Menu = () => {
   const [openModal, setOpenModal] = React.useState(false)
@@ -59,18 +60,18 @@ const Menu = () => {
 
       <ModalLogin isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} /> */}
 
-      <Navbar collapseOnSelect expand="lg"  variant="dark" className="fixed-top">
+      <Navbar expand="lg" variant="dark" className="fixed-top">
         <Container>
           <Navbar.Brand href="#home">
             <Image src="/favicon.png" width="40" height="40" alt="Logo oficial" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav" className="d-block justify-content-end">
+          <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav className="">
               <Nav.Link href="/">Página inicial</Nav.Link>
               <Nav.Link href="/discover">Livros</Nav.Link>
               <Nav.Link href="/cart">Carrinho</Nav.Link>
-              <NavDropdown title="Conta" id="collasible-nav-dropdown">
+              <NavDropdown title="Conta" id="collasible-nav-dropdown" menuVariant="dark">
                 <NavDropdown.Item href="/profile/editInfo">Editar perfil</NavDropdown.Item>
                 <NavDropdown.Item href="/profile/addBook">
                   Adicionar livro
@@ -84,6 +85,8 @@ const Menu = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></Script>
     </header >
   )
 }
