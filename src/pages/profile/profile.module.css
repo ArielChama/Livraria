@@ -1,0 +1,30 @@
+.infoProfile {
+  max-width: 50%;
+}
+
+.infoProfile img {
+  border-radius: 50%;
+}
+
+.infoProfile h3 {
+  margin-top: 12px;
+}
+
+.rowListBooks {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.rowListBooks > div {
+  background-color: #353434;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerSection btn {
+  height: 0;
+}
