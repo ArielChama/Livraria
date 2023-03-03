@@ -48,7 +48,7 @@ li {
   cursor: pointer;
   user-select: none;
   border: transparent;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: #FFB53D;
   transition: 0.2s ease-in-out;
 }
@@ -72,6 +72,10 @@ li {
 
 .w_100 {
   width: 100%;
+}
+
+.textPrimary {
+  color: #FFB53D;
 }
 
 /*

@@ -1,34 +1,36 @@
 import React from 'react'
 import HEAD from '@/components/HEAD'
 import Layout from '@/components/Layout'
-import style from './addBook.module.css'
 
-const addBook = () => {
+const editInfo = () => {
   return (
     <>
-      <HEAD title="Adicionar um livro" />
+      <HEAD title="Editar informações" />
       <Layout>
         <div className="containerCard">
-          <h1>Adicionar um livro novo</h1>
+          <h1>Editar perfil</h1>
 
           <form action="">
-            <label htmlFor="">Título</label>
+            <label htmlFor="">Nome</label>
+            <input type="text" className="formInput" />
+
+            <label htmlFor="">Email</label>
             <input type="text" className="formInput" />
 
             <div className="inputsGroup">
               <div>
-                <label htmlFor="">Capa</label>
+                <label htmlFor="">Imagem</label>
                 <input type="file" className="formInput" />
               </div>
 
               <div>
-                <label htmlFor="">Preço</label>
+                <label htmlFor="">Contacto</label>
                 <input type="number" className="formInput" />
               </div>
             </div>
 
-            <label htmlFor="">Sinopse</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escreva aqui o seu comentário: " className="formTextarea"></textarea>
+            <label htmlFor="">Biografia</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Fale um pouco sobre você: " className="formTextarea"></textarea>
 
             <button type="submit" className="buttonPrimary" style={{ borderRadius: '10px' }}>
               Publicar
@@ -40,4 +42,4 @@ const addBook = () => {
   )
 }
 
-export default addBook
+export default editInfo

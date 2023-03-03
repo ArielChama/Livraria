@@ -72,7 +72,12 @@ const Menu = () => {
               <Nav.Link href="/discover">Livros</Nav.Link>
               <Nav.Link href="/cart">Carrinho</Nav.Link>
               <NavDropdown title="Conta" id="collasible-nav-dropdown" menuVariant="dark">
-                <NavDropdown.Item href="/profile/editInfo">Editar perfil</NavDropdown.Item>
+                <NavDropdown.Item href="/profile">
+                  Perfil
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/profile/editInfo">
+                  Editar perfil
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/profile/addBook">
                   Adicionar livro
                 </NavDropdown.Item>
