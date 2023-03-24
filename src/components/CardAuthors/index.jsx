@@ -6,7 +6,7 @@ const CardAuthors = ({name, image}) => {
   return (
     <div className={style.cardAuthor}>
       <Image src={image} width="120" height="120" alt={name} />
-      <h4>{name}</h4>
+      <h5>{name}</h5>
     </div>
   )
 }

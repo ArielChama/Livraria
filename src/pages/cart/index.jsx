@@ -35,7 +35,7 @@ const Cart = () => {
           <h2>O seu carrinho <span>(2 itens)</span></h2>
 
           <div className={style.containerTable}>
-            <table class={style.table}>
+            <table className={style.table}>
               <thead>
                 <tr>
                   <th scope="col"></th>
@@ -47,7 +47,7 @@ const Cart = () => {
               
               <tbody>
                 {Books.map(({ title, author, cover, id, price }) => (
-                  <tr>
+                  <tr key={id}>
                     <td>
                       <Image src={cover} width="140" height="190" alt="" />
                     </td>

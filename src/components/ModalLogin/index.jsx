@@ -31,22 +31,22 @@ export const ModalLogin = ({ isOpen, setModalOpen }) => {
           <button type="button" className={style.buttonClose} onClick={setModalOpen}>X</button>
           <div className={style.body}>
             <div className={style.container}>
-              <div class={style.tabs}>
-                <div class={style.tabsHead}>
-                  <div onClick={TabLogin} class={`${style.tabsToggle}`}>
+              <div className={style.tabs}>
+                <div className={style.tabsHead}>
+                  <div onClick={TabLogin} className={`${style.tabsToggle}`}>
                     <span>Entrar</span>
                     <div className={activeToggleLogin}></div>
                   </div>
-                  <div onClick={TabRegister} class={`${style.tabsToggle}`}>
+                  <div onClick={TabRegister} className={`${style.tabsToggle}`}>
                     <span>Criar</span>
                     <div className={activeToggleRegister}></div>
                   </div>
                 </div>
                 <div>
-                  <div class={activeTabLogin}>
+                  <div className={activeTabLogin}>
                     <Login />
                   </div>
-                  <div class={activeTabRegister}>
+                  <div className={activeTabRegister}>
                     <Register />
                   </div>
                 </div>

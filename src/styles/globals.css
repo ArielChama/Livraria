@@ -22,8 +22,6 @@ body {
 
 body {
   font-family: 'Josefin Sans' !important;
-  background-color: #171719 !important;
-  color: #fff !important;
 }
 
 a {
@@ -82,7 +80,7 @@ li {
   Forms
 */
 .containerCard {
-  background-color: #1f1f22;
+  background-color: #dddddd;
   margin: 10rem 0;
   padding: 4rem;
   border-radius: 10px;

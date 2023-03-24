@@ -32,7 +32,7 @@
   line-height: 1.6;
   font-size: 18px;
   margin-bottom: 1rem;
-  color: #ffffffe3;
+  color: #171719;
 }
 
 .listBooks {
@@ -64,7 +64,7 @@
 }
 
 .cardNewBook {
-  background-color: #1f1f22;
+  background-color: #f5f5f5;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
@@ -87,10 +87,6 @@
 
 .bookInfo span {
   font-size: 18px;
-}
-
-.buttonPrimary {
-  padding: 0.9rem 1.6rem;
 }
 
 .rankStars {
