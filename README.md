@@ -1,4 +1,4 @@
-Site ficticio para puma livraria. O projecto foi desenvolvido usando [Next.js](https://nextjs.org/), iniciado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Site ficticio para uma livraria. O projecto foi desenvolvido usando [Next.js](https://nextjs.org/), iniciado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
